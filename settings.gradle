@@ -1,0 +1,5 @@
+rootProject.name = 'project-parent'
+include 'project-core'
+include 'project-app'
+include 'project-web'
+

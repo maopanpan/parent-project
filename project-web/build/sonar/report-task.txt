@@ -1,0 +1,6 @@
+projectKey=com.myself.test:project-parent:project-web
+serverUrl=http://localhost:9000
+serverVersion=7.2.1.14109
+dashboardUrl=http://localhost:9000/dashboard?id=com.myself.test%3Aproject-parent%3Aproject-web
+ceTaskId=AWV7NfAFI7mT3Kg8fuwv
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWV7NfAFI7mT3Kg8fuwv

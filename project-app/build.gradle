@@ -1,0 +1,27 @@
+group 'com.myself.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':project-core')
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.kafka:spring-kafka') {
+        exclude(module: 'kafka-clients')
+    }
+    compile('org.apache.kafka:kafka-clients:1.1.0')
+    compileOnly 'org.projectlombok:lombok'
+    compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('junit:junit:4.12')
+    testCompileOnly 'org.projectlombok:lombok'
+}
